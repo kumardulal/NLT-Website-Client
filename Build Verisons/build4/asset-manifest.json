@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/newleaderstech/static/css/main.d904b232.chunk.css",
+    "main.js": "/newleaderstech/static/js/main.b9a15fe8.chunk.js",
+    "main.js.map": "/newleaderstech/static/js/main.b9a15fe8.chunk.js.map",
+    "runtime-main.js": "/newleaderstech/static/js/runtime-main.e5cf65bc.js",
+    "runtime-main.js.map": "/newleaderstech/static/js/runtime-main.e5cf65bc.js.map",
+    "static/js/2.c820f129.chunk.js": "/newleaderstech/static/js/2.c820f129.chunk.js",
+    "static/js/2.c820f129.chunk.js.map": "/newleaderstech/static/js/2.c820f129.chunk.js.map",
+    "index.html": "/newleaderstech/index.html",
+    "static/css/main.d904b232.chunk.css.map": "/newleaderstech/static/css/main.d904b232.chunk.css.map",
+    "static/js/2.c820f129.chunk.js.LICENSE.txt": "/newleaderstech/static/js/2.c820f129.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e5cf65bc.js",
+    "static/js/2.c820f129.chunk.js",
+    "static/css/main.d904b232.chunk.css",
+    "static/js/main.b9a15fe8.chunk.js"
+  ]
+}

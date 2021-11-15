@@ -1,0 +1,182 @@
+/* This css file is linked with 3 component :(Main porpose is to enable animation and media query task)
+ 1. sidebar ,
+ 2. home page 
+
+
+/* ////////for home page */
+
+.homecontent {
+  position: static;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /* background-color: #4b658723; */
+  justify-content: center;
+  border-radius: 20px;
+  margin-bottom: 10px;
+}
+
+/* css that relates between home page and sidebar */
+.side-bar {
+  position: fixed;
+  display: flex;
+  right: 0px;
+  width: 70%;
+  background-color: #4b65879f;
+  height: 500px;
+  border-top: solid 5px rgb(37, 55, 71);
+  border-left-color: rgb(100, 0, 55);
+  border-right-color: rgb(80, 75, 7);
+  top: 0.5px;
+  bottom: 10%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 90px;
+  animation-name: sidebarAnimation;
+  animation-duration: 8s;
+  animation-iteration-count: 3;
+  align-items: center;
+  flex-direction: column;
+  transition: 1.5s cubic-bezier(1, 0, 0, 5);
+}
+
+.sidebar-hide-mood {
+  visibility: hidden;
+  height: 0px;
+}
+
+/* \\small screen */
+
+@media screen and (min-width: 599px) {
+  .side-bar {
+    position: fixed;
+    display: flex;
+    right: 0px;
+    width: 50%;
+    background-color: #36b0b49f;
+    height: 800px;
+    border-top: solid 5px;
+    /* border-top: solid 5px rgba(78, 188, 202, 0.726); */
+    border-left-color: rgb(100, 0, 55);
+    border-right-color: rgb(80, 75, 7);
+    top: 0.5px;
+    border-top-right-radius: 1000px;
+    border-bottom-left-radius: 700px;
+    border-top-left-radius: 10px;
+    border-top: solid 5px rgb(37, 55, 71);
+
+    animation-name: sidebarAnimation;
+    animation-duration: 8s;
+    animation-iteration-count: 3;
+  }
+}
+
+/* midium screen */
+
+@media screen and (min-width: 600px) and (max-width: 1199px) {
+  .side-bar {
+    position: fixed;
+    display: flex;
+    right: 0px;
+    width: 50%;
+    background-color: #4b65879f;
+    height: 780px;
+    border-top: solid 5px;
+    border-top: solid 5px rgb(37, 55, 71);
+    border-left-color: rgb(100, 0, 55);
+
+    top: 0.5px;
+    border-top-right-radius: 20px;
+
+    border-bottom-left-radius: 70px;
+    border-top-left-radius: 10px;
+    animation-name: sidebarAnimation;
+    animation-duration: 8s;
+    animation-iteration-count: 3;
+  }
+}
+
+/* large screen */
+@media screen and (min-width: 1200px) {
+  .side-bar {
+    position: fixed;
+    display: flex;
+
+    width: 50%;
+    background-color: #4b65879f;
+    height: 800px;
+    border-top: solid 10px rgb(37, 55, 71);
+    border-left-color: rgb(100, 0, 55);
+
+    top: 0.5px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 70px;
+
+    animation-name: sidebarAnimation;
+    animation-duration: 8s;
+    animation-iteration-count: 3;
+  }
+  .homecontent {
+    position: static;
+    /* margin-top: 120px; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* background-color: #f7f6f27a; */
+    justify-content: center;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+}
+
+@keyframes sidebarAnimation {
+  0% {
+    background-color: #4b65879f;
+  }
+  25% {
+    background-color: #4b65879f;
+  }
+  50% {
+    background-color: #4667a55b;
+  }
+  100% {
+    background-color: #113cc75e;
+  }
+}
+
+/* keeping this for further backup */
+
+/* const [windowsize, setWindowSize] = useState({ "height": window.innerHeight, "width": window.innerWidth }) */
+
+/* //toggle is only for smaller dimension screen size
+if (window.matchMedia(WindowSize.small).matches) {
+    menutoggler(styles.smallscreen);
+    setContentPlaceHolder(false)
+
+} else if (window.matchMedia(WindowSize.medium).matches) {
+    setCurrentStyle(styles.mediumScreen)
+    menutoggler(styles.mediumScreen);
+    setContentPlaceHolder(false)
+
+
+}
+else if ((window.matchMedia(WindowSize.large).matches)) {
+    setCurrentStyle(styles.largeScreen)
+    menutoggler(styles.largeScreen);
+    setContentPlaceHolder(true)
+
+}
+else {
+    setCurrentStyle(styles.mediumScreen)
+    setContentPlaceHolder(false)
+
+
+
+    // alert("resize of window failed")
+}
+
+}, [windowsize, menuToggle])
+ */
